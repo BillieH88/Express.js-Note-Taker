@@ -4,7 +4,7 @@ const path = require('path');
 // Instantiate an express server
 const app = express();
 // Declare port value
-const PORT = 6200;
+const PORT = process.env.PORT || 6200;
 
 const routes= require("./routes");
 var notes = require("./db/db.json")
